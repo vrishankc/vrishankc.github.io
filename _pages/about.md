@@ -23,7 +23,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! My name is Vrishank, and I'm a rising sophomore at MIT majoring in Biological Engineering, minoring in Computer Science. I'm broadly interested in biomedical informatics research, and am currently working on multimodal biomedical representation learning at the Vázquez-García Lab across the Broad Institute of MIT and Harvard, Harvard Medical School, and Massachusetts General Hospital; as well as at the Aghaeepour Lab within Stanford University's Department of Biomedical Data Science.
+Hi! My name is Vrishank, and I'm a rising sophomore at MIT majoring in Biological Engineering, minoring in Computer Science. I'm passionate about biomedical informatics research and building in medtech, and am interested in multimodal patient representation learning and clinical trajectory prediction. I am currently conducting research at the Vázquez-García Lab across the Broad Institute of MIT and Harvard, Harvard Medical School, and Massachusetts General Hospital; as well as at the Aghaeepour Lab within Stanford University's Department of Biomedical Data Science.
 
 Previously, I was at Stanford in the Department of Pediatric Cardiology, researching how variable penetrant mutations can cause rare cardiovascular disease. I also conducted independent biomedical informatics research through Lynbrook High School's science fair program.
 

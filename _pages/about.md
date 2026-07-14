@@ -25,6 +25,6 @@ latest_posts:
 
 Hi! My name is Vrishank, and I'm a rising sophomore at MIT majoring in Biological Engineering, minoring in Computer Science. I'm broadly interested in biomedical informatics research, and am currently working on multimodal biomedical representation learning at the Vázquez-García Lab across the Broad Institute of MIT and Harvard, Harvard Medical School, and Massachusetts General Hospital; as well as at the Aghaeepour Lab within Stanford University's Department of Biomedical Data Science.
 
-Outside of research, I love to play tennis, try new recipes, and [https://www.instagram.com/vrosings](sing).
+Outside of research, I love to play tennis, try new recipes, and [sing](https://www.instagram.com/vrosings).
 
 Feel free to contact me at [vrishank@mit.edu](vrishank@mit.edu)! I'd love to chat.

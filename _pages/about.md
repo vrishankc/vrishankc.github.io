@@ -2,16 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: BioE & CS @ MIT
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +23,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi! My name is Vrishank, and I'm a rising sophomore at MIT majoring in Biological Engineering, minoring in Computer Science. I'm broadly interested in biomedical informatics research, and am currently working on multimodal biomedical representation learning at the Vázquez-García Lab across the Broad Institute of MIT and Harvard, Harvard Medical School, and Massachusetts General Hospital; as well as at the Aghaeepour Lab within Stanford University's Department of Biomedical Data Science.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Outside of research, I love to play tennis, try new recipes, and [https://www.instagram.com/vrosings](sing).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Feel free to contact me at [vrishank@mit.edu](vrishank@mit.edu)! I'd love to chat. 

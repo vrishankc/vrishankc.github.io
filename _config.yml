@@ -9,16 +9,16 @@ last_name: Chandrasekhar
 contact_note: >
   vrishank@mit.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  BioE & CS @ MIT, working on multimodal biomedical representation learning and prognosis prediction.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: foundation models, biomedical informatics, prognosis prediction, representation learning # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon:  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🥀 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://vrishank.github.io # the base hostname & protocol for your site
+url: https://vrishankc.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -138,7 +138,7 @@ related_blog_posts:
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
-  repo: github.com/vrishankc/vrishank # <your-github-user-name>/<your-github-repo-name>
+  repo: github.com/vrishankc/vrishankc.github.io # <your-github-user-name>/<your-github-repo-name>
   repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
   category: Comments # name of the category under which discussions will be created
   category_id: # leave empty or specify your category_id (see https://giscus.app/)
@@ -152,7 +152,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname (unused, using Giscus instead)
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -232,7 +232,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
@@ -341,8 +340,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Chandrasekhar]
+  first_name: [Vrishank]
 
   style: apa
   locale: en

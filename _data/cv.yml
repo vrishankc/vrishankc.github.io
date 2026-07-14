@@ -1,189 +1,212 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Vrishank Chandrasekhar
+  label: Undergraduate
+  email: vrishank@mit.edu
+  phone: "+1 (858) 413-7346"
+  location: ""
+  citizenship: US Citizen
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: ""
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
+    - network: Instagram
+      username: vrishank.tc
     - network: GitHub
-      username: example
+      username: vrishankc
     - network: LinkedIn
-      username: example
+      username: vrishankc
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
+    street: 77 Massachusetts Avenue
+    city: Cambridge
+    region: Massachusetts
+    postalCode: 02139
     countryCode: US
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: Massachusetts Institute of Technology
+        location: Cambridge, MA
+        url: "https://web.mit.edu/"
+        area: Biological Engineering, minor in Computer Science
+        studyType: S.B.
+        start_date: 2025-08
+        end_date: 2029-06
+        courses: "5.12 Organic Chemistry, 18.02 Multivariable Calculus, 7.03 Genetics, 6.1200 Math for Computer Science, 8.01 Classical Mechanics, 20.A06 Hands-On Making in Biological Engineering (BioBots)"
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Coursework: 5.12 Organic Chemistry, 18.02 Multivariable Calculus, 7.03 Genetics, 6.1200 Math for Computer Science, 8.01 Classical Mechanics, 20.A06 Hands-On Making in Biological Engineering (BioBots)"
+          - "Activities and Societies: Y Combinator Startup School 2026, NEET Living Machines, MIT Associate Advisor, MIT BioMakers Associate, Genetics Tutor, MIT Undergraduate Research Technology Conference Executive & Webmaster, Co-President of MIT Ohms: South Asian Acappella"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: Lynbrook High School
+        location: San Jose, CA
+        url: ""
+        area: "San Jose, California"
+        studyType: High School Diploma
+        start_date: 2021-08
+        end_date: 2025-06
+        score: ""
+        courses: "Calculus BC, Statistics, Computer Science A, Physics C: Mechanics, Biology, Chemistry, English Literature and Composition, English Language and Composition (all AP)"
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Activities: Machine Learning Club (President), Research Club (Vice President), Chamber Orchestra"
+          - "AP Coursework: Calculus BC, Statistics, Computer Science A, Physics C: Mechanics, Biology, Chemistry, English Literature and Composition, English Language and Composition"
+
+      - institution: West Valley College
+        location: Saratoga, CA
+        url: ""
+        area: ""
+        studyType: Dual Enrollment
+        start_date: 2024-06
+        end_date: 2025-05
+        score: "GPA 4.0/4.0"
+        courses: "Intermediate (Multivariable) Calculus, Differential Equations, Linear Algebra"
+        highlights:
+          - "Coursework: Intermediate (Multivariable) Calculus, Differential Equations, Linear Algebra"
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: "Aghaeepour Lab | Stanford Biomedical Data Science"
+        position: Undergraduate Research Intern
+        location: Stanford, CA
+        start_date: 2026-07
+        end_date: present
+        summary: "Preparing multimodal data pipelines to support pre-training and fine-tuning of RL-based foundation models for clinical reasoning and neonatal patient trajectory prediction. Supervised by Dr. Weijieying Ren."
         highlights:
-          - Relativity
-          - Description 2.
+          - "Preparing multimodal data pipelines to support pre-training and fine-tuning of RL-based foundation models for clinical reasoning and neonatal patient trajectory prediction. Supervised by Dr. Weijieying Ren."
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: "Vázquez-García Lab | Broad Institute of MIT and Harvard"
+        position: Undergraduate Researcher
+        location: Cambridge, MA
+        start_date: 2025-09
+        end_date: 2026-08
+        summary: "Supervised by Prof. Ignacio Vázquez-García (Broad Institute, Massachusetts General Hospital, Harvard Medical School). Deploying single-cell genomics data analysis pipelines to study tumor clonal evolution."
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Supervised by Prof. Ignacio Vázquez-García (Broad Institute, Massachusetts General Hospital, Harvard Medical School). Deploying single-cell genomics data analysis pipelines to study tumor clonal evolution."
+          - "Analyzing and integrating electronic health records to support multimodal patient representation learning and patient trajectory prediction in genomically unstable cancers."
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: "Rabinovitch Lab | Stanford University School of Medicine"
+        position: Paid Bioinformatics and Cardiovascular Research Intern
+        location: Stanford, CA
+        start_date: 2023-06
+        end_date: 2025-08
+        summary: "Applied bioinformatics, transcriptomics, imaging informatics, and functional assays to investigate how loss-of-function mutations can cause the pathogenesis of pulmonary arterial hypertension (PAH) and other rare cardiovascular diseases."
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - "Applied bioinformatics, transcriptomics, imaging informatics, and functional assays (assessing cell adhesion, migration, proliferation, etc.) to investigate how loss-of-function mutations can cause the pathogenesis of pulmonary arterial hypertension (PAH) and other rare cardiovascular diseases."
+          - "Developed a computational framework to analyze RNA-seq data from co-cultures of wild-type and knockout stem cell-derived endothelial and smooth muscle cells; optimized co-cultures for experimental consistency."
+          - "Investigated the role of TBX4 loss in driving endothelial-like gene expression in smooth muscle cells, with broader contributions to research on promoter optimization for haploinsufficiency research."
+          - "Selected as the first high school student to participate in the Single-Cell Omics Analysis Jamboree hosted by the IGVF Consortium. Collaborated with other laboratories to test and analyze single-cell epigenetic data using a novel analysis pipeline developed by the Broad Institute."
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+      - company: Lynbrook High School
+        position: Independent Biomedical Informatics Researcher
+        location: San Jose, CA
+        start_date: 2022-03
+        end_date: 2025-06
+        summary: "Developing machine learning algorithms using electronic health records (EHRs) and medical imaging to predict adverse clinical events."
+        highlights:
+          - "Developing machine learning algorithms using electronic health records (EHRs) and medical imaging to predict adverse clinical events."
+          - "Developing supervised, weakly supervised, self-supervised, and unsupervised machine learning and deep learning models for medical image analysis and clinical natural language processing."
+          - "Grand Prize Winner of the Synopsys Silicon Valley Science and Technology Championship and 1st Grand Award and Top Award winner at the Regeneron International Science and Engineering Fair. Named a 2025 Regeneron Science Talent Search Scholar. Presented at SIYSS and attended Nobel Week festivities."
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Dry Lab
+        level: ""
+        icon: fa-solid fa-laptop-code
+        keywords: "Python, R, SQL, Pandas, NumPy, PyTorch, TensorFlow, Seurat, Matplotlib, Seaborn, ScanPy, SciPy, Word2Vec, TidyVerse, ArgParse, GSeapy, GradIO, Tkinter"
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+      - name: Wet Lab
+        level: ""
+        icon: fa-solid fa-flask
+        keywords: "qPCR, RT-qPCR, plasmid transformation, mutagenesis, flow cytometry, BCA protein assay, Caspase-GLO apoptosis assay, MTT/MTS assays, immunofluorescence, cell culture (iPSC, bacterial, cancer, arterial), siRNA transfection, stem cell differentiation, co-culture system optimization, small molecule synthesis, natural product analog synthesis, thin-layer chromatography (TLC), column chromatography, liquid chromatography, mass spectrometry, NMR spectroscopy, proliferation assay, adhesion assays, migration assays, RNA-seq sample preparation, sterile technique, buffer preparation, DNA Midiprep, and lab protocol optimization."
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+      - name: "Discovery of a Novel Digital Biomarker for Early Pan-Cancer Survival and Recurrence Prediction via Free-Text Clinical Narratives"
+        summary: "Used natural language processing to assess the use of free-text clinical narratives in fitting survival and recurrence outcomes for pan-cancer patients at initial diagnosis, enabling risk stratification across 32 cancer types. Earned top awards at 2025 International Science and Engineering Fair. Named a Top-300 Scholar in the 2025 Regeneron Science Talent Search (STS)."
+        highlights: []
+        start_date: ""
+        end_date: ""
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: "Investigating the Role of TBX4 Loss-of-Function in Pulmonary Arterial Hypertension (PAH)"
+        summary: "Developed an automated RNA-sequencing differential expression and functional analysis application, using co-culture models of stem-cell differentiated wild-type and mutated endothelial and smooth muscle cells, to study how TBX4 loss-of-function mutations can lead to a PAH phenotype."
+        highlights: []
+        start_date: ""
+        end_date: ""
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    Awards:
+      - title: MIT Huang-Hobbs Innovation Award
+        authors:
+          - "MIT BioMakers: From Bench to Body Symposium"
+        date: ""
+        awarder: "MIT Biological and Chemical Engineering Faculty and Broad Institute Core Faculty"
+        url: ""
+        summary: "Awarded Grand Prize for my research at the MIT BioMakers: From Bench to Body Symposium. Judged and recognized by MIT Biological and Chemical Engineering faculty and Broad Institute Core Faculty, this award honors an exceptional MIT student whose pioneering work demonstrates creativity, technical excellence, and real-world impact, and pushes boundaries in human health, medicine, and life sciences innovation to advance greater societal impact and accessibility."
+
+      - title: Dudley R. Herschbach SIYSS Top Award
+        authors:
+          - "Regeneron International Science and Engineering Fair (ISEF)"
+        date: 2025
+        awarder: Regeneron International Science and Engineering Fair (ISEF)
+        url: ""
+        summary: "Awarded 1 of 12 best-in-fair Top Awards out of 1,657 finalists and 10 million global entries at the 2025 Regeneron International Science and Engineering Fair (ISEF). Received a free trip to present research at the Stockholm International Youth Science Seminar; served as a panelist in \"Minds of the Future\" with Prof. Omar Yaghi (2025 Nobel Laureate in Chemistry). Attended the Nobel Prize Lectures & Ceremonies. Met the 2025 Laureates at the Nobel Reception & the Swedish U.S. Embassy."
+
+      - title: "First Grand Award and Best of Category in Translational Medical Science at ISEF '25"
+        authors:
+          - "Regeneron International Science and Engineering Fair (ISEF)"
+        date: 2025
+        awarder: Regeneron International Science and Engineering Fair (ISEF)
+        url: ""
+        summary: "Selected as Best of Category in Translational Medical Science worldwide for my research discovering a low-cost, non-invasive, text-based digital biomarker for pan-cancer prognosis prediction via free-text clinical narratives. $6,000 prize."
+
+      - title: 2025 Regeneron Science Talent Search (STS) Scholar
+        authors:
+          - "Society for Science"
+        date: 2025
+        awarder: Regeneron Science Talent Search (STS)
+        url: ""
+        summary: "Named a Top-300 Scholar in the nation's oldest and most prestigious science and mathematics research competition for high school seniors. $2,000 prize."
+
+      - title: 2nd Place Prize by Silicon Valley Engineering Council
+        authors:
+          - "Silicon Valley Engineering Council (SVEC)"
+        date: ""
+        awarder: Silicon Valley Engineering Council (SVEC)
+        url: ""
+        summary: "$3,000 Cash Prize issued by SVEC, dedicated to promoting STEM innovation by fostering curiosity and technical excellence in future engineers and scientists."
+
+      - title: Grand Prize Winner at Synopsys Silicon Valley Science and Technology Championship
+        authors:
+          - "Synopsys Silicon Valley Science and Technology Championship"
+        date: ""
+        awarder: Synopsys Silicon Valley Science and Technology Championship
+        url: ""
+        summary: "Selected to compete at the Regeneron International Science and Engineering Fair (ISEF), the world's largest and most prestigious international pre-college STEM research competition, as an ISEF finalist from the Santa Clara Valley Science and Engineering Fair, the most competitive regional ISEF-affiliated fair in the nation."
+
+    Conference Presentations:
+      - name: Stockholm International Youth Science Seminar (SIYSS)
+        icon: fa-solid fa-person-chalkboard
+        summary: "Invited Research Presenter and Panelist with Prof. Omar Yaghi (2025 Nobel Laureate in Chemistry)"
+
+      - name: Nobel Lectures Week, Nobel Prize Ceremony and Banquet in Stockholm, Sweden
+        icon: fa-solid fa-award
+        summary: "Attended"
+
+      - name: American Thoracic Society
+        icon: fa-solid fa-lungs
+        summary: "Linking Novel Extra-Thoracic Disease Mechanisms with PAH"
+
+      - name: IEEE MIT Undergraduate Research Technology Conference
+        icon: fa-solid fa-microphone
+        summary: "Oral presentation"
+
+      - name: West Coast Biological Sciences Undergraduate Research Conference
+        icon: fa-solid fa-note-sticky
+        summary: "Poster presentation"
+
+      - name: Stanford Cardiovascular Research Symposium
+        icon: fa-solid fa-note-sticky
+        summary: "Poster presentation (4 times)"
+
+      - name: Maternal and Child Health Research Institute (MCHRI) Symposium
+        icon: fa-solid fa-note-sticky
+        summary: "Poster presentation"
+
+      - name: 2023 American Chemical Society National Meeting
+        icon: fa-solid fa-note-sticky
+        summary: "Poster presentation"

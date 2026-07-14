@@ -1,12 +1,8 @@
 cv:
   name: Vrishank Chandrasekhar
-  label: Undergraduate
   email: vrishank@mit.edu
   phone: "+1 (858) 413-7346"
-  location: ""
-  citizenship: US Citizen
-  image: ""
-  summary: ""
+  location: "Cambridge, MA"
 
   social_networks:
     - network: Instagram
@@ -15,13 +11,6 @@ cv:
       username: vrishankc
     - network: LinkedIn
       username: vrishankc
-
-  address:
-    street: 77 Massachusetts Avenue
-    city: Cambridge
-    region: Massachusetts
-    postalCode: 02139
-    countryCode: US
 
   sections:
     Education:
@@ -120,14 +109,10 @@ cv:
       - name: "Discovery of a Novel Digital Biomarker for Early Pan-Cancer Survival and Recurrence Prediction via Free-Text Clinical Narratives"
         summary: "Used natural language processing to assess the use of free-text clinical narratives in fitting survival and recurrence outcomes for pan-cancer patients at initial diagnosis, enabling risk stratification across 32 cancer types. Earned top awards at 2025 International Science and Engineering Fair. Named a Top-300 Scholar in the 2025 Regeneron Science Talent Search (STS)."
         highlights: []
-        start_date: ""
-        end_date: ""
 
       - name: "Investigating the Role of TBX4 Loss-of-Function in Pulmonary Arterial Hypertension (PAH)"
         summary: "Developed an automated RNA-sequencing differential expression and functional analysis application, using co-culture models of stem-cell differentiated wild-type and mutated endothelial and smooth muscle cells, to study how TBX4 loss-of-function mutations can lead to a PAH phenotype."
         highlights: []
-        start_date: ""
-        end_date: ""
 
     Awards:
       - title: MIT Huang-Hobbs Innovation Award
@@ -135,7 +120,6 @@ cv:
           - "MIT BioMakers: From Bench to Body Symposium"
         date: ""
         awarder: "MIT Biological and Chemical Engineering Faculty and Broad Institute Core Faculty"
-        url: ""
         summary: "Awarded Grand Prize for my research at the MIT BioMakers: From Bench to Body Symposium. Judged and recognized by MIT Biological and Chemical Engineering faculty and Broad Institute Core Faculty, this award honors an exceptional MIT student whose pioneering work demonstrates creativity, technical excellence, and real-world impact, and pushes boundaries in human health, medicine, and life sciences innovation to advance greater societal impact and accessibility."
 
       - title: Dudley R. Herschbach SIYSS Top Award
@@ -143,15 +127,13 @@ cv:
           - "Regeneron International Science and Engineering Fair (ISEF)"
         date: 2025
         awarder: Regeneron International Science and Engineering Fair (ISEF)
-        url: ""
-        summary: "Awarded 1 of 12 best-in-fair Top Awards out of 1,657 finalists and 10 million global entries at the 2025 Regeneron International Science and Engineering Fair (ISEF). Received a free trip to present research at the Stockholm International Youth Science Seminar; served as a panelist in \"Minds of the Future\" with Prof. Omar Yaghi (2025 Nobel Laureate in Chemistry). Attended the Nobel Prize Lectures & Ceremonies. Met the 2025 Laureates at the Nobel Reception & the Swedish U.S. Embassy."
+        summary: 'Awarded 1 of 12 best-in-fair Top Awards out of 1,657 finalists and 10 million global entries at the 2025 Regeneron International Science and Engineering Fair (ISEF). Received a free trip to present research at the Stockholm International Youth Science Seminar; served as a panelist in "Minds of the Future" with Prof. Omar Yaghi (2025 Nobel Laureate in Chemistry). Attended the Nobel Prize Lectures & Ceremonies. Met the 2025 Laureates at the Nobel Reception & the Swedish U.S. Embassy.'
 
       - title: "First Grand Award and Best of Category in Translational Medical Science at ISEF '25"
         authors:
           - "Regeneron International Science and Engineering Fair (ISEF)"
         date: 2025
         awarder: Regeneron International Science and Engineering Fair (ISEF)
-        url: ""
         summary: "Selected as Best of Category in Translational Medical Science worldwide for my research discovering a low-cost, non-invasive, text-based digital biomarker for pan-cancer prognosis prediction via free-text clinical narratives. $6,000 prize."
 
       - title: 2025 Regeneron Science Talent Search (STS) Scholar
@@ -159,7 +141,6 @@ cv:
           - "Society for Science"
         date: 2025
         awarder: Regeneron Science Talent Search (STS)
-        url: ""
         summary: "Named a Top-300 Scholar in the nation's oldest and most prestigious science and mathematics research competition for high school seniors. $2,000 prize."
 
       - title: 2nd Place Prize by Silicon Valley Engineering Council
@@ -167,7 +148,6 @@ cv:
           - "Silicon Valley Engineering Council (SVEC)"
         date: ""
         awarder: Silicon Valley Engineering Council (SVEC)
-        url: ""
         summary: "$3,000 Cash Prize issued by SVEC, dedicated to promoting STEM innovation by fostering curiosity and technical excellence in future engineers and scientists."
 
       - title: Grand Prize Winner at Synopsys Silicon Valley Science and Technology Championship
@@ -175,7 +155,6 @@ cv:
           - "Synopsys Silicon Valley Science and Technology Championship"
         date: ""
         awarder: Synopsys Silicon Valley Science and Technology Championship
-        url: ""
         summary: "Selected to compete at the Regeneron International Science and Engineering Fair (ISEF), the world's largest and most prestigious international pre-college STEM research competition, as an ISEF finalist from the Santa Clara Valley Science and Engineering Fair, the most competitive regional ISEF-affiliated fair in the nation."
 
     Conference Presentations:

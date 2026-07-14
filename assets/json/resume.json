@@ -36,7 +36,9 @@
       "startDate": "2025-09-01",
       "endDate": "2026-08-01",
       "summary": "Supervised by Prof. Ignacio Vázquez-García (Broad Institute, Massachusetts General Hospital, Harvard Medical School). Deploying single-cell genomics data analysis pipelines to study tumor clonal evolution.",
-      "highlights": ["Analyzing and integrating electronic health records to support multimodal patient representation learning and patient trajectory prediction in genomically unstable cancers."]
+      "highlights": [
+        "Analyzing and integrating electronic health records to support multimodal patient representation learning and patient trajectory prediction in genomically unstable cancers."
+      ]
     },
     {
       "name": "Rabinovitch Lab | Stanford University School of Medicine",
@@ -75,7 +77,14 @@
       "startDate": "2025-08-01",
       "endDate": "2029-06-01",
       "score": "",
-      "courses": ["5.12 Organic Chemistry", "18.02 Multivariable Calculus", "7.03 Genetics", "6.1200 Math for Computer Science", "8.01 Classical Mechanics", "20.A06 Hands-On Making in Biological Engineering (BioBots)"],
+      "courses": [
+        "5.12 Organic Chemistry",
+        "18.02 Multivariable Calculus",
+        "7.03 Genetics",
+        "6.1200 Math for Computer Science",
+        "8.01 Classical Mechanics",
+        "20.A06 Hands-On Making in Biological Engineering (BioBots)"
+      ],
       "highlights": []
     },
     {
@@ -87,7 +96,16 @@
       "startDate": "2021-08-01",
       "endDate": "2025-06-01",
       "score": "",
-      "courses": ["Calculus BC", "Statistics", "Computer Science A", "Physics C: Mechanics", "Biology", "Chemistry", "English Literature and Composition", "English Language and Composition"],
+      "courses": [
+        "Calculus BC",
+        "Statistics",
+        "Computer Science A",
+        "Physics C: Mechanics",
+        "Biology",
+        "Chemistry",
+        "English Literature and Composition",
+        "English Language and Composition"
+      ],
       "highlights": []
     },
     {
@@ -154,13 +172,61 @@
       "name": "Dry Lab",
       "level": "",
       "icon": "fa-solid fa-laptop-code",
-      "keywords": ["Python", "R", "SQL", "Pandas", "NumPy", "PyTorch", "TensorFlow", "Seurat", "Matplotlib", "Seaborn", "ScanPy", "SciPy", "Word2Vec", "TidyVerse", "ArgParse", "GSeapy", "GradIO", "Tkinter"]
+      "keywords": [
+        "Python",
+        "R",
+        "SQL",
+        "Pandas",
+        "NumPy",
+        "PyTorch",
+        "TensorFlow",
+        "Seurat",
+        "Matplotlib",
+        "Seaborn",
+        "ScanPy",
+        "SciPy",
+        "Word2Vec",
+        "TidyVerse",
+        "ArgParse",
+        "GSeapy",
+        "GradIO",
+        "Tkinter"
+      ]
     },
     {
       "name": "Wet Lab",
       "level": "",
       "icon": "fa-solid fa-flask",
-      "keywords": ["qPCR", "RT-qPCR", "plasmid transformation", "mutagenesis", "flow cytometry", "BCA protein assay", "Caspase-GLO apoptosis assay", "MTT/MTS assays", "immunofluorescence", "cell culture (iPSC, bacterial, cancer, arterial)", "siRNA transfection", "stem cell differentiation", "co-culture system optimization", "small molecule synthesis", "natural product analog synthesis", "thin-layer chromatography (TLC)", "column chromatography", "liquid chromatography", "mass spectrometry", "NMR spectroscopy", "proliferation assay", "adhesion assays", "migration assays", "RNA-seq sample preparation", "sterile technique", "buffer preparation", "DNA Midiprep", "lab protocol optimization"]
+      "keywords": [
+        "qPCR",
+        "RT-qPCR",
+        "plasmid transformation",
+        "mutagenesis",
+        "flow cytometry",
+        "BCA protein assay",
+        "Caspase-GLO apoptosis assay",
+        "MTT/MTS assays",
+        "immunofluorescence",
+        "cell culture (iPSC, bacterial, cancer, arterial)",
+        "siRNA transfection",
+        "stem cell differentiation",
+        "co-culture system optimization",
+        "small molecule synthesis",
+        "natural product analog synthesis",
+        "thin-layer chromatography (TLC)",
+        "column chromatography",
+        "liquid chromatography",
+        "mass spectrometry",
+        "NMR spectroscopy",
+        "proliferation assay",
+        "adhesion assays",
+        "migration assays",
+        "RNA-seq sample preparation",
+        "sterile technique",
+        "buffer preparation",
+        "DNA Midiprep",
+        "lab protocol optimization"
+      ]
     }
   ],
   "languages": [],

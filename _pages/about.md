@@ -27,4 +27,4 @@ Hi! My name is Vrishank, and I'm a rising sophomore at MIT majoring in Biologica
 
 Outside of research, I love to play tennis, try new recipes, and [https://www.instagram.com/vrosings](sing).
 
-Feel free to contact me at [vrishank@mit.edu](vrishank@mit.edu)! I'd love to chat. 
+Feel free to contact me at [vrishank@mit.edu](vrishank@mit.edu)! I'd love to chat.

@@ -6,6 +6,6 @@ email: vrishank@mit.edu # your email address
 rss_icon: true # comment this line to hide the RSS icon
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-instagram: vrishank.tc # your Instagram username
-github: vrishankc # your GitHub username
-linkedin: vrishankc # your LinkedIn username
+instagram_id: vrishank.tc # your Instagram username
+github_username: vrishankc # your GitHub username
+linkedin_username: vrishankc # your LinkedIn username

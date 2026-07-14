@@ -1,7 +1,6 @@
 cv:
   name: Vrishank Chandrasekhar
   email: vrishank@mit.edu
-  phone: ""
   location: "Cambridge, MA"
 
   social_networks:
@@ -110,7 +109,7 @@ cv:
       - title: MIT Huang-Hobbs Innovation Award
         authors:
           - "MIT BioMakers: From Bench to Body Symposium"
-        date: ""
+        date: 2025
         awarder: "MIT Biological and Chemical Engineering Faculty and Broad Institute Core Faculty"
         summary: "Awarded Grand Prize for my research at the MIT BioMakers: From Bench to Body Symposium. Judged and recognized by MIT Biological and Chemical Engineering faculty and Broad Institute Core Faculty, this award honors an exceptional MIT student whose pioneering work demonstrates creativity, technical excellence, and real-world impact, and pushes boundaries in human health, medicine, and life sciences innovation to advance greater societal impact and accessibility."
 

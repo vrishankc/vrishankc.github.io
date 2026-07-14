@@ -1,7 +1,7 @@
 cv:
   name: Vrishank Chandrasekhar
   email: vrishank@mit.edu
-  phone: "+1 (858) 413-7346"
+  phone: ""
   location: "Cambridge, MA"
 
   social_networks:
@@ -23,7 +23,6 @@ cv:
         end_date: 2029-06
         courses: "5.12 Organic Chemistry, 18.02 Multivariable Calculus, 7.03 Genetics, 6.1200 Math for Computer Science, 8.01 Classical Mechanics, 20.A06 Hands-On Making in Biological Engineering (BioBots)"
         highlights:
-          - "Coursework: 5.12 Organic Chemistry, 18.02 Multivariable Calculus, 7.03 Genetics, 6.1200 Math for Computer Science, 8.01 Classical Mechanics, 20.A06 Hands-On Making in Biological Engineering (BioBots)"
           - "Activities and Societies: Y Combinator Startup School 2026, NEET Living Machines, MIT Associate Advisor, MIT BioMakers Associate, Genetics Tutor, MIT Undergraduate Research Technology Conference Executive & Webmaster, Co-President of MIT Ohms: South Asian Acappella"
 
       - institution: Lynbrook High School
@@ -34,10 +33,9 @@ cv:
         start_date: 2021-08
         end_date: 2025-06
         score: ""
-        courses: "Calculus BC, Statistics, Computer Science A, Physics C: Mechanics, Biology, Chemistry, English Literature and Composition, English Language and Composition (all AP)"
+        courses: "AP Calculus BC, AP Statistics, AP Computer Science A, AP Physics C: Mechanics, AP Biology, AP Chemistry, AP English Literature and Composition, AP English Language and Composition (all AP)"
         highlights:
           - "Activities: Machine Learning Club (President), Research Club (Vice President), Chamber Orchestra"
-          - "AP Coursework: Calculus BC, Statistics, Computer Science A, Physics C: Mechanics, Biology, Chemistry, English Literature and Composition, English Language and Composition"
 
       - institution: West Valley College
         location: Saratoga, CA
@@ -49,7 +47,6 @@ cv:
         score: "GPA 4.0/4.0"
         courses: "Intermediate (Multivariable) Calculus, Differential Equations, Linear Algebra"
         highlights:
-          - "Coursework: Intermediate (Multivariable) Calculus, Differential Equations, Linear Algebra"
 
     Experience:
       - company: "Aghaeepour Lab | Stanford Biomedical Data Science"
@@ -59,7 +56,6 @@ cv:
         end_date: present
         summary: "Preparing multimodal data pipelines to support pre-training and fine-tuning of RL-based foundation models for clinical reasoning and neonatal patient trajectory prediction. Supervised by Dr. Weijieying Ren."
         highlights:
-          - "Preparing multimodal data pipelines to support pre-training and fine-tuning of RL-based foundation models for clinical reasoning and neonatal patient trajectory prediction. Supervised by Dr. Weijieying Ren."
 
       - company: "Vázquez-García Lab | Broad Institute of MIT and Harvard"
         position: Undergraduate Researcher
@@ -68,8 +64,6 @@ cv:
         end_date: 2026-08
         summary: "Supervised by Prof. Ignacio Vázquez-García (Broad Institute, Massachusetts General Hospital, Harvard Medical School). Deploying single-cell genomics data analysis pipelines to study tumor clonal evolution."
         highlights:
-          - "Supervised by Prof. Ignacio Vázquez-García (Broad Institute, Massachusetts General Hospital, Harvard Medical School). Deploying single-cell genomics data analysis pipelines to study tumor clonal evolution."
-          - "Analyzing and integrating electronic health records to support multimodal patient representation learning and patient trajectory prediction in genomically unstable cancers."
 
       - company: "Rabinovitch Lab | Stanford University School of Medicine"
         position: Paid Bioinformatics and Cardiovascular Research Intern
@@ -78,7 +72,6 @@ cv:
         end_date: 2025-08
         summary: "Applied bioinformatics, transcriptomics, imaging informatics, and functional assays to investigate how loss-of-function mutations can cause the pathogenesis of pulmonary arterial hypertension (PAH) and other rare cardiovascular diseases."
         highlights:
-          - "Applied bioinformatics, transcriptomics, imaging informatics, and functional assays (assessing cell adhesion, migration, proliferation, etc.) to investigate how loss-of-function mutations can cause the pathogenesis of pulmonary arterial hypertension (PAH) and other rare cardiovascular diseases."
           - "Developed a computational framework to analyze RNA-seq data from co-cultures of wild-type and knockout stem cell-derived endothelial and smooth muscle cells; optimized co-cultures for experimental consistency."
           - "Investigated the role of TBX4 loss in driving endothelial-like gene expression in smooth muscle cells, with broader contributions to research on promoter optimization for haploinsufficiency research."
           - "Selected as the first high school student to participate in the Single-Cell Omics Analysis Jamboree hosted by the IGVF Consortium. Collaborated with other laboratories to test and analyze single-cell epigenetic data using a novel analysis pipeline developed by the Broad Institute."
@@ -90,7 +83,6 @@ cv:
         end_date: 2025-06
         summary: "Developing machine learning algorithms using electronic health records (EHRs) and medical imaging to predict adverse clinical events."
         highlights:
-          - "Developing machine learning algorithms using electronic health records (EHRs) and medical imaging to predict adverse clinical events."
           - "Developing supervised, weakly supervised, self-supervised, and unsupervised machine learning and deep learning models for medical image analysis and clinical natural language processing."
           - "Grand Prize Winner of the Synopsys Silicon Valley Science and Technology Championship and 1st Grand Award and Top Award winner at the Regeneron International Science and Engineering Fair. Named a 2025 Regeneron Science Talent Search Scholar. Presented at SIYSS and attended Nobel Week festivities."
 

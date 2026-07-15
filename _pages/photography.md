@@ -9,16 +9,41 @@ images:
   lightbox2: true
 ---
 
+<style>
+  .photography-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  @media (min-width: 576px) {
+    .photography-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (min-width: 768px) {
+    .photography-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .photography-grid a {
+    display: block;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+  .photography-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+
 <div class="photography">
 {% if site.data.photography and site.data.photography.size > 0 %}
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+  <div class="photography-grid">
     {% for photo in site.data.photography %}
       <a href="{{ '/assets/img/photography/' | append: photo.image | relative_url }}" data-lightbox="photography" data-title="{{ photo.alt }}">
-        <img
-          src="{{ '/assets/img/photography/' | append: photo.image | relative_url }}"
-          alt="{{ photo.alt }}"
-          class="w-full aspect-square object-cover rounded-lg"
-        />
+        <img src="{{ '/assets/img/photography/' | append: photo.image | relative_url }}" alt="{{ photo.alt }}" />
       </a>
     {% endfor %}
   </div>

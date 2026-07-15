@@ -1,3 +1,6 @@
 # Add one entry per photo. `image` is a filename inside assets/img/photography/.
 # - image: example.jpg
 #   alt: Sunset over the Charles River
+
+- image: nodefoundation.jpg
+  alt: Digital Expressionism by Kim Asendorf, Node Foundation Palo Alto, 2026

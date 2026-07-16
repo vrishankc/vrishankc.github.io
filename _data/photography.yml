@@ -1,6 +1,16 @@
-# Add one entry per photo. `image` is a filename inside assets/img/photography/.
+# Add one entry per photo or video.
+# Photos: `image` is a filename inside assets/img/photography/.
 # - image: example.jpg
 #   alt: Sunset over the Charles River
+#
+# Videos: `video` is a filename inside assets/video/photography/.
+# `image` is optional here too — a poster frame shown before playback (assets/img/photography/).
+# - video: example.mp4
+#   image: example-poster.jpg
+#   alt: Timelapse over the Charles River
 
 - image: nodefoundation.jpg
   alt: Digital Expressionism by Kim Asendorf, Node Foundation Palo Alto, 2026
+
+- image: purpleskies.jpg
+  alt: Purple skies over San Jose, 2026

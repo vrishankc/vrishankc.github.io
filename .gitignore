@@ -15,3 +15,8 @@ node_modules/
 output/playwright/
 test-results/
 vendor
+
+# Managed manually via the GitHub website only — see .git/hooks/post-merge
+assets/img/photography/
+assets/video/photography/
+_data/photography.yml

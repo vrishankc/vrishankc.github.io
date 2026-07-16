@@ -1,0 +1,42 @@
+name: Mute photography videos
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "assets/video/photography/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  strip-audio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Strip audio from any video that still has a track
+        run: |
+          for f in assets/video/photography/*.mp4; do
+            [ -e "$f" ] || continue
+            if ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$f" | grep -q .; then
+              echo "Stripping audio: $f"
+              ffmpeg -y -i "$f" -c:v copy -an "${f%.mp4}.tmp.mp4"
+              mv "${f%.mp4}.tmp.mp4" "$f"
+            fi
+          done
+      - name: Commit and push if anything changed
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git add assets/video/photography/*.mp4
+          if git diff --cached --quiet; then
+            echo "No videos needed muting."
+          else
+            git commit -m "chore: mute photography videos [automated]"
+            git push
+          fi

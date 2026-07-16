@@ -2,11 +2,17 @@
 # - image: example.jpg
 #   alt: Sunset over the Charles River
 
-- image: nodefoundation.jpg
-  alt: Digital Expressionism by Kim Asendorf, Node Foundation Palo Alto, 2026
+- image: atnobel.jpg
+  alt: At the Nobel Prize Ceremony, 2025
 
 - image: purpleskies.jpg
   alt: Purple skies over San Jose, 2026
+
+- image: omaryaghi.jpg
+  alt: Picture with Professor Omar Yaghi, Nobel Prize Winner, 2026
+
+- image: bodegabay.jpg
+  alt: Bodega Bay, 2025
 
 - image: killiancourt.jpg
   alt: Killian Court, MIT, 2026
@@ -14,83 +20,74 @@
 - image: hohmies.jpg
   alt: With my Hohmies <3, 2026
 
-- image: bodegabay.jpg
-  alt: Bodega Bay, 2025
-
-- image: omaryaghi.jpg
-  alt: Picture with Professor Omar Yaghi, Nobel Prize Winner, 2026
-
 - video: july42026fireworks.mp4
   alt: July 4th Fireworks, 2026
-
-- image: kungstadsharten.jpg
-  alt: Kungsträdgården, Stockholm, 2025
-
-- image: tdgarden.jpg
-  alt: TD Garden, Boston, 2026
-
-- image: stanfordcoda.jpg
-  alt: Stanford Coda, 2026
-
-- image: swedenstreets.jpg
-  alt: Streets of Gamla Stan, Stockholm, 2025
-
-- image: warmfall.jpg
-  alt: Warm Fall, 2025
-
-- image: nobellecture.jpg
-  alt: Lecture from Nobel Prize Winners, 2025
 
 - image: ardem.jpg
   alt: Picture with Dr. Ardem Patapoutian, Nobel Prize Winner, at Swedish U.S. Embassy, 2025
 
-- image: evasboston.jpg
-  alt: Eva's in Boston, 2026
+- image: snowycambridge.jpg
+  alt: Snowy Cambridge, 2026
 
-- image: 512orgo.jpg
-  alt: Lecture from 5.12 Orgo, 2026
+- image: nodefoundation.jpg
+  alt: Digital Expressionism by Kim Asendorf, Node Foundation Palo Alto, 2026
 
-- video: twinstatesbeach.mp4
-  alt: Twin States Beach, 2026
-
-- image: backbayboston.jpg
-  alt: Lolita's Back Bay Boston, 2026
-
-- image: mofaexhibitdesi.jpg
-  alt: Desi Museum of Fine Arts Exhibit, 2026
+- image: kungstadsharten.jpg
+  alt: Kungsträdgården, Stockholm, 2025
 
 - image: mitdome.jpg
   alt: MIT Dome, 2026
 
-- video: twinstatesbeachwavesrolling.mp4
-  alt: Twin States Beach -- Waves Rolling, 2026
+- image: beautifulbay.jpg
+  alt: Beautiful Bay, 2026
+
+- image: nobellecture.jpg
+  alt: Lecture from Nobel Prize Winners, 2025
+
+- image: stanfordcoda.jpg
+  alt: Stanford Coda, 2026
+
+- image: warmfall.jpg
+  alt: Warm Fall, 2025
+
+- image: geneticsleg.jpg
+  alt: Genetics Lecture, 2026
+
+- image: swedenstreets.jpg
+  alt: Streets of Gamla Stan, Stockholm, 2025
+
+- image: mofaexhibitdesi.jpg
+  alt: Desi Museum of Fine Arts Exhibit, 2026
+
+- image: tdgarden.jpg
+  alt: TD Garden, Boston, 2026
+
+- video: twinstatesbeach.mp4
+  alt: Twin States Beach, 2026
 
 - image: konserthuset.jpg
   alt: Konserthuset, Stockholm, 2025
 
-- image: atnobel.jpg
-  alt: At the Nobel Prize Ceremony, 2025
-
-- image: beautifulbay.jpg
-  alt: Beautiful Bay, 2026
-
-- image: snowycambridge.jpg
-  alt: Snowy Cambridge, 2026
-
-- image: cupertinoroad.jpg
-  alt: Cupertino Road, 2026
-
-- image: kendallsquare.jpg
-  alt: Kendall Square, 2026
-
 - image: kochinstitute.jpg
   alt: Koch Institute, 2026
+
+- image: charlesriver.jpg
+  alt: View of Charles River, 2026
 
 - image: harvardyard.jpg
   alt: Harvard Yard, 2026
 
-- image: geneticslego.jpg
-  alt: Genetics Lecture, 2026
+- image: backbayboston.jpg
+  alt: Lolita's Back Bay Boston, 2026
+
+- image: 512orgo.jpg
+  alt: Lecture from 5.12 Orgo, 2026
+
+- video: twinstatesbeachwavesrolling.mp4
+  alt: Twin States Beach -- Waves Rolling, 2026
+
+- image: kendallsquare.jpg
+  alt: Kendall Square, 2026
 
 - image: dormview.jpg
   alt: Dorm Views :), 2026
@@ -98,8 +95,11 @@
 - image: bostonhall.jpg
   alt: Boston Hall, 2026
 
-- image: charlesriver.jpg
-  alt: View of Charles River, 2026
+- image: evasboston.jpg
+  alt: Eva's in Boston, 2026
 
 - image: froshformal.jpg
   alt: Walking to Frosh Formal, 2026
+
+- image: cupertinoroad.jpg
+  alt: Cupertino Road, 2026

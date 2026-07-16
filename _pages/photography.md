@@ -48,6 +48,7 @@ images:
         <div class="photography-video">
           <video
             controls
+            muted
             playsinline
             preload="metadata"
             {% if item.image %}poster="{{ item.image | url_encode | prepend: '/assets/img/photography/' | relative_url }}"{% endif %}

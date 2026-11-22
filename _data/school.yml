@@ -1,0 +1,106 @@
+# Content for _pages/school.html.
+#
+# schools      - one header per institution: name, degree, detail
+# coursework   - name, code, and optional `at` for courses taken outside MIT
+# activities   - name and optional role (shown muted after the name)
+# awards       - title, issuer, date, description; `featured: true` gives a stronger pill color.
+#                Each pill expands on click to show the issuer, date, and description.
+
+schools:
+  - name: Massachusetts Institute of Technology
+    degree: S.B. Computer Science
+    detail: Minors in Biology and Mathematics · Class of 2028
+
+coursework:
+  - name: Introduction to Machine Learning
+    code: "6.3900"
+  - name: "AI and Decision-Making in Medicine: From Disease to Therapy"
+    code: "6.3930"
+  - name: Mathematics for Computer Science
+    code: "6.1200"
+  - name: Introduction to CS and Programming in Python (ASE)
+    code: 6.100A
+  - name: Multivariable Calculus
+    code: "18.02"
+  - name: Differential Equations
+    code: "18.03"
+  - name: Linear Algebra
+    code: Math 4C
+    at: West Valley College
+  - name: Differential Equations
+    code: Math 4B
+    at: West Valley College
+  - name: Classical Mechanics
+    code: "8.01"
+  - name: Genetics
+    code: "7.03"
+  - name: Introduction to Biology (ASE)
+    code: "7.012"
+  - name: Hands-On Making in Biological Engineering
+    code: 20.A06
+  - name: Organic Chemistry I
+    code: "5.12"
+  - name: Principles of Chemical Science
+    code: "5.111"
+  - name: Introduction to Western Music
+    code: 21M.011
+  - name: Introduction to Musics of the World
+    code: 21M.030
+  - name: Film Music
+    code: 21M.284
+  - name: Readings in Classical Tamil
+    code: SAS 109AR
+    at: Harvard
+
+activities:
+  - name: SERC Scholar
+    role: Schwarzman College of Computing
+  - name: College of Computing Undergraduate Advisory Group
+    role: Chair
+  - name: Student Advisory Group in Engineering
+  - name: Undergraduate Research Technology Conference
+    role: Executive & Webmaster
+  - name: Machine Learning for Health (ML4H)
+    role: Reviewer
+  - name: Global Teaching Labs
+    role: Italy
+  - name: NEET Living Machines
+    role: Industry Liaison
+  - name: MIT Biotech Group
+    role: Consulting Associate
+  - name: BioMakers
+    role: Associate
+  - name: Associate Advisor
+  - name: Chemistry & Biology Tutor
+  - name: MIT Ohms
+    role: A Cappella
+  - name: Boston Bandish
+
+awards:
+  - title: Nobel Prize Ceremony Invitee & Nobel Week Delegate
+    issuer: Nobel Prize Ceremonies
+    date: Dec 2025
+    featured: true
+    description: Panelist for "Minds of the Future" alongside Professor Omar Yaghi, 2025 Nobel Laureate in Chemistry. Attended the Nobel Prize lectures, banquet, and ceremony; met the 2025 laureates at the Nobel reception and the U.S. Embassy in Sweden. Interviewed by Japanese media.
+  - title: MIT Huang-Hobbs Innovation Award
+    issuer: MIT Biological Engineering
+    date: Nov 2025
+    featured: true
+    description: Top grand prize for my research at the 2025 MIT BioMakers "From Bench to Body" Symposium, judged by MIT Biological and Chemical Engineering faculty and Broad Institute core faculty.
+  - title: Dudley R. Herschbach SIYSS Award
+    issuer: Regeneron International Science and Engineering Fair
+    date: May 2025
+    featured: true
+    description: One of 12 best-in-fair top awards out of 1,657 finalists and 10 million entries worldwide at Regeneron ISEF 2025. Included an all-expenses-paid trip to present at the Stockholm International Youth Science Seminar during Nobel Week.
+  - title: ISEF First Grand Award & Best of Category
+    issuer: Regeneron International Science and Engineering Fair
+    date: May 2025
+    description: Best of Category in Translational Medical Science worldwide for my biomedical informatics research; one of 39 first-place winners out of 1,657 finalists. $6,000 prize.
+  - title: Regeneron STS Scholar
+    issuer: Society for Science
+    date: Jan 2025
+    description: Top 300 in the Regeneron Science Talent Search, the nation's oldest and most prestigious science and math research competition for high school seniors. $2,000 prize.
+  - title: SVEC Second Place Prize
+    issuer: Silicon Valley Engineering Council
+    date: Apr 2025
+    description: $3,000 prize from SVEC, which promotes STEM innovation by fostering curiosity and technical excellence in future engineers and scientists.

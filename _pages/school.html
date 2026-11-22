@@ -1,0 +1,64 @@
+---
+layout: page
+title: school
+permalink: /school/
+nav: true
+nav_order: 3
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}" />
+
+<div class="pf pf-school">
+  <div class="pf-stripes" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+
+  {% for s in site.data.school.schools %}
+  <div class="pf-school-head pf-reveal">
+    <h2 class="pf-school-name">{{ s.name }}</h2>
+    <span class="pf-school-degree">{{ s.degree }}</span>
+    {% if s.detail %}<span class="pf-school-detail">{{ s.detail }}</span>{% endif %}
+  </div>
+  {% endfor %}
+
+  <div class="pf-cols">
+    <section class="pf-col pf-reveal">
+      <h3 class="pf-col-title">coursework</h3>
+      <ul class="pf-plain">
+        {% for c in site.data.school.coursework %}
+        <li>
+          {{ c.name }}
+          <span class="pf-sub">· {{ c.code }}{% if c.at %} ({{ c.at }}){% endif %}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="pf-col pf-reveal">
+      <h3 class="pf-col-title">activities</h3>
+      <ul class="pf-plain">
+        {% for a in site.data.school.activities %}
+        <li>{{ a.name }} {% if a.role %}<span class="pf-sub">· {{ a.role }}</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="pf-col pf-col-awards pf-reveal">
+      <h3 class="pf-col-title">awards and honors</h3>
+      <div class="pf-awards">
+        {% for w in site.data.school.awards %}
+        <details class="pf-award{% if w.featured %} pf-award-featured{% endif %}">
+          <summary>{{ w.title }}</summary>
+          <div class="pf-award-body">
+            <p class="pf-sub">{{ w.issuer }} · {{ w.date }}</p>
+            {% if w.description %}
+            <p>{{ w.description }}</p>
+            {% endif %}
+          </div>
+        </details>
+        {% endfor %}
+      </div>
+      <p class="pf-hint">tap an award for details</p>
+    </section>
+  </div>
+</div>
+
+<script src="{{ '/assets/js/portfolio.js' | relative_url }}" defer></script>

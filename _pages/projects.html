@@ -1,0 +1,92 @@
+---
+layout: page
+title: projects
+permalink: /projects/
+description: Selected projects in machine learning, clinical data, and software engineering.
+nav: true
+nav_order: 2
+# Filter buttons. `key` must match the `categories` values in _data/projects.yml.
+filters:
+  - key: all
+    label: All
+  - key: ml
+    label: ML & research
+  - key: swe
+    label: Software engineering
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}" />
+
+<div class="pf">
+  {% if page.filters %}
+  <div class="pf-filters" role="group" aria-label="Filter projects">
+    {% for f in page.filters %}
+    <button type="button" class="pf-filter" data-filter="{{ f.key }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}">
+      {{ f.label }}
+    </button>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="pf-grid">
+    {% for p in site.data.projects %}
+    <article class="pf-card pf-reveal" data-categories="{{ p.categories | join: ' ' }}">
+      <div class="pf-head">
+        <h3 class="pf-title">{{ p.title }}</h3>
+        {% if p.dates %}<span class="pf-dates">{{ p.dates }}</span>{% endif %}
+      </div>
+      {% if p.context %}
+      <p class="pf-org">{{ p.context }}</p>
+      {% endif %} {% if p.summary %}
+      <p class="pf-summary">{{ p.summary }}</p>
+      {% endif %} {% if p.metrics %}
+      <div class="pf-metrics">
+        {% for m in p.metrics %}
+        <div class="pf-metric">
+          <span class="pf-metric-value">{{ m.value }}</span>
+          <span class="pf-metric-label">{{ m.label }}</span>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %} {% if p.highlights %}
+      <ul class="pf-list">
+        {% for h in p.highlights %}
+        <li>
+          {{ h | markdownify | remove: '
+          <p>' | remove: '</p>
+          ' | strip }}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %} {% if p.more %}
+      <details class="pf-more">
+        <summary>more details</summary>
+        <ul class="pf-list">
+          {% for h in p.more %}
+          <li>
+            {{ h | markdownify | remove: '
+            <p>' | remove: '</p>
+            ' | strip }}
+          </li>
+          {% endfor %}
+        </ul>
+      </details>
+      {% endif %} {% if p.tags %}
+      <ul class="pf-tags">
+        {% for t in p.tags %}
+        <li>{{ t }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %} {% if p.links %}
+      <div class="pf-links">
+        {% for l in p.links %}
+        <a href="{{ l.url }}" target="_blank" rel="noopener noreferrer"> {% if l.icon %}<i class="{{ l.icon }}"></i>{% endif %} {{ l.label }} </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </div>
+</div>
+
+<script src="{{ '/assets/js/portfolio.js' | relative_url }}" defer></script>

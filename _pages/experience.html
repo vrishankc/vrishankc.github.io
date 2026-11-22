@@ -1,0 +1,62 @@
+---
+layout: page
+title: experience
+permalink: /experience/
+description: Research and engineering roles, newest first. Expand any entry for more detail.
+nav: true
+nav_order: 1
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}" />
+
+<div class="pf">
+  <ol class="pf-timeline">
+    {% for job in site.data.experiences %}
+    <li class="pf-entry pf-reveal{% if job.current %} pf-current{% endif %}">
+      <div class="pf-head">
+        <h3 class="pf-title">{{ job.role }} {% if job.current %}<span class="pf-badge">current</span>{% endif %}</h3>
+        <span class="pf-dates">{{ job.dates }}</span>
+      </div>
+      <p class="pf-org">
+        {% if job.url %}<a href="{{ job.url }}">{{ job.org }}</a>{% else %}{{ job.org }}{% endif %} {% if job.location %}<span class="pf-loc">
+          · {{ job.location }}</span
+        >{% endif %}
+      </p>
+      {% if job.summary %}
+      <p class="pf-summary">{{ job.summary }}</p>
+      {% endif %} {% if job.highlights %}
+      <ul class="pf-list">
+        {% for h in job.highlights %}
+        <li>
+          {{ h | markdownify | remove: '
+          <p>' | remove: '</p>
+          ' | strip }}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %} {% if job.more %}
+      <details class="pf-more">
+        <summary>more details</summary>
+        <ul class="pf-list">
+          {% for h in job.more %}
+          <li>
+            {{ h | markdownify | remove: '
+            <p>' | remove: '</p>
+            ' | strip }}
+          </li>
+          {% endfor %}
+        </ul>
+      </details>
+      {% endif %} {% if job.tags %}
+      <ul class="pf-tags">
+        {% for t in job.tags %}
+        <li>{{ t }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+
+<script src="{{ '/assets/js/portfolio.js' | relative_url }}" defer></script>

@@ -1,0 +1,94 @@
+# Project entries, rendered by _pages/projects.md (in this order).
+#
+# Fields (all optional except title):
+#   title, context, dates
+#   summary     - one or two sentences
+#   metrics     - short headline numbers, shown as stat chips
+#   highlights  - bullet points that are always visible
+#   more        - extra bullet points, hidden behind a "more details" toggle
+#   tags        - tools/methods, shown as chips
+#   categories  - used by the filter buttons; values must appear in `filters` in _pages/projects.md
+#   links       - list of {label, url, icon}; icon is a Font Awesome class
+
+- title: "GRACE: Graph-Reinforced Assessment of Cardiac Events"
+  context: MIT 6.3930 final project · team of two
+  dates: Sep 2026 – Present
+  categories: [ml]
+  summary: Multimodal early prediction of acute myocardial infarction, acute heart failure, and atrial fibrillation in the emergency department, using MIMIC-IV vitals, labs, ECGs, and radiology text.
+  metrics:
+    - value: "164K+"
+      label: ED stays
+    - value: "0.93–0.96"
+      label: val. AUROC (AMI)
+    - value: "100%"
+      label: label agreement (AHF, AFib)
+  highlights:
+    - Leakage-safe design with two prediction times (6 h / 24 h after arrival); every input is timestamped at or before the prediction time.
+    - Patient-level 70/15/15 splits from a salted SHA-256 hash of the patient ID, with hyperparameters tuned on an inner holdout and the test set scored once, after the models were frozen.
+    - XGBoost and TF-IDF + logistic regression baselines; the team's fused multimodal models reach 0.93–0.96 validation AUROC for AMI, with patient-clustered bootstrap CIs.
+    - "In progress: LLM evaluation comparing MedGemma and Gemma 3 — zero-shot Yes/No probability scoring with KV-cache reuse, frozen-embedding classifiers, paired AUROC tests, and knowledge-graph augmentation ablations."
+  more:
+    - Cohort of 425,087 ED stays filtered to 164,629 stays (91,175 patients) at 6 h and 177,803 stays (96,628 patients) at 24 h.
+    - Labels from ICD-9/10 codes on the linked hospitalization (or ED codes when not admitted), acute presentations only; validated against MIMIC-IV-ECG-Ext-ICD.
+    - "Prevalence at 6 h: AMI 3.4%, AHF 7.1%, AFib 14.5%. Evaluated with AUROC, AUPRC, Brier score, and subgroup analysis."
+    - Chunked processing of multi-gigabyte tables, caching, and a shared training harness.
+  tags: [PyTorch, XGBoost, Hugging Face, MedGemma, MIMIC-IV, Multimodal]
+  links:
+    - label: Code
+      url: https://github.com/vrishankc/grace
+      icon: fa-brands fa-github
+
+- title: Pan-Cancer Prognosis from Clinical Narratives
+  context: Independent research · Regeneron ISEF 2025 First Grand Award, Best of Category
+  dates: 2022 – 2025
+  categories: [ml]
+  summary: A digital biomarker for early pan-cancer prognosis, learned from free-text diagnostic pathology reports.
+  metrics:
+    - value: "0.77"
+      label: C-index, recurrence
+    - value: "0.72"
+      label: C-index, survival
+    - value: "9,523"
+      label: patients, 32 cancers
+  highlights:
+    - Trained skip-gram FastText and Word2Vec models on ~2M clinical notes (MIMIC-III, i2b2) after noise removal, sentence segmentation, and clinical term normalization.
+    - Built TF-IDF-weighted document embeddings for TCGA patients from 686 institutions and fit Cox proportional hazards models on them.
+    - Hazard ratio of 1.22 after adjusting for stage and age; benchmarked against random survival forests.
+  more:
+    - Kaplan–Meier analysis by risk quintile with log-rank tests, pan-cancer and within individual cancers.
+    - OCR cleanup of scanned pathology reports.
+  tags: [Python, NLP, Word2Vec, FastText, Survival analysis, TCGA]
+
+- title: URTC Conference Voting System
+  context: IEEE MIT Undergraduate Research Technology Conference
+  dates: Oct 2026
+  categories: [swe]
+  summary: A login-free, exactly-once voting system for ~800 conference attendees, built on serverless functions and Redis.
+  metrics:
+    - value: "803"
+      label: voting links sent
+    - value: "216"
+      label: ballots
+    - value: "197"
+      label: presentations
+  highlights:
+    - One-time tokens instead of accounts. Each vote is a single atomic Redis Lua script that spends the token, updates the tallies, and writes the audit log, so each person votes exactly once per category.
+    - Link-scanner protection, so email security scanners can't burn tokens; the token is read on page load and spent only on submit.
+    - Wrote an SMTP client on Node's TLS module to deliver personal links through two Gmail accounts within daily limits, with a send log that lets a crashed run resume without duplicates.
+  more:
+    - Link manager to issue, reissue, test, close, and archive tokens.
+    - Token-protected live results endpoint with a text chart in the terminal.
+    - Offline QR-code help desk for attendees who didn't receive their email.
+    - Shared config file, validated CSV import, a shared script library, and a runbook for future organizers.
+  tags: [Next.js, Node.js, Redis, Lua, Vercel, SMTP]
+
+- title: MIT URTC Website
+  context: Webmaster, IEEE MIT URTC
+  dates: 2026 – Present
+  categories: [swe]
+  summary: Restored and now maintain the conference website. When the previous project became inaccessible, I migrated it to a new GitHub repository and Vercel project and updated DNS.
+  tags: [Vercel, DNS, GitHub]
+  links:
+    - label: urtc.mit.edu
+      url: https://urtc.mit.edu
+      icon: fa-solid fa-globe

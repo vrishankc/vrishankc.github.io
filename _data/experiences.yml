@@ -1,0 +1,80 @@
+# Experience entries, rendered by _pages/experience.md (newest first).
+#
+# Fields (all optional except org/role/dates):
+#   org, role, dates, location, url
+#   summary     - one-line description shown under the role
+#   highlights  - bullet points that are always visible
+#   more        - extra bullet points, hidden behind a "more details" toggle
+#   tags        - tools/methods, shown as chips
+#   current     - true to show a "current" badge
+
+- org: Broad Institute of MIT and Harvard · Massachusetts General Hospital
+  role: Undergraduate Researcher, Vázquez-García Lab
+  dates: Sep 2025 – Present
+  location: Cambridge, MA
+  current: true
+  summary: Clinical ML data infrastructure, cancer genomics pipelines, and multi-cohort survival analysis.
+  highlights:
+    - Linking structured EHR data from 7M+ Mass General Brigham patients with free-text clinical notes to build training data for a generative transformer that models cancer patient trajectories.
+    - Led the computational analysis for a Broad / Ragon Institute collaboration testing whether a cholesterol biosynthesis × gasdermin E (GSDME) interaction predicts cancer therapy response, across 18 public cohorts (~4,000 patients).
+    - Benchmarked and deployed tumor whole-genome pipelines on a SLURM HPC cluster (somatic SNV/SV calling, ecDNA reconstruction, single-cell copy-number inference).
+  more:
+    - Querying EHR data in Snowflake with SQL and Cortex.
+    - "Cohorts: TCGA (6 cohorts, ~3,000 samples, survival), 8 immunotherapy cohorts (~1,000 samples, response + survival), 4 neoadjuvant breast-cancer chemotherapy cohorts (pathologic complete response); DepMap 24Q4 and PRISM 20Q2 cell-line screens."
+    - Cox proportional hazards and logistic regression across several cholesterol signature definitions, with sensitivity analyses.
+    - "Finding: component effects replicate, but the interaction is weak and setting-dependent — opposite directions in pancreatic cancer (HR ≈ 0.68) and melanoma (HR ≈ 1.40)."
+    - Extending to model GSDME expression against dose-response AUC across PRISM drug screens to identify gasdermin-dependent drug sensitivities; presented results to collaborators.
+    - Genomics tools — JaBbA, AmpliconSuite, Strelka, oncoanalyser, Mondrian — across ovarian, breast, and pancreatic cancers; single-cell WGS QC pipelines (~96-cell tumor/normal batches).
+  tags: [Python, SQL, Snowflake, SLURM, Survival analysis, EHR, Genomics]
+
+- org: Stanford University, Department of Biomedical Data Science
+  role: Research Intern, Aghaeepour Lab
+  dates: Jul 2026 – Aug 2026
+  location: Stanford, CA
+  summary: Data pipelines for pretraining a multimodal neonatal patient foundation model.
+  highlights:
+    - Built a Python + SQL pipeline streaming a 200+ GB EHR warehouse from Google BigQuery into hash-partitioned Parquet, with out-of-core DuckDB processing of 100M+ row tables.
+    - Recovered 2.1 billion unmapped flowsheet rows, fixed an orphaned-key bug affecting 100,000+ rows, and unified 7 divergent cohort definitions.
+    - Prepared OMOP clinical data spanning notes, measurements, diagnoses, medications, procedures, and X-ray imaging for foundation model pretraining.
+  more:
+    - Privacy-preserving surrogate keys; defined person, visit, and timestamp keys for longitudinal linkage.
+    - Table-by-table analysis and feature filtering of Condition, Measurement, and Notes tables; separated diagnosis sources, dropped billing/administrative records, and mapped source codes to standard concepts.
+    - Categorized clinical note types and proposed content-based filtering for letters.
+    - Worked on multimodal data pipelines and language model benchmarking for the foundation model.
+    - Wrote a handoff README documenting tables, filtering decisions, and linkage keys.
+  tags: [Python, SQL, BigQuery, DuckDB, Parquet, OMOP, Foundation models]
+
+- org: Stanford School of Medicine, Department of Pediatric Cardiology
+  role: Research Intern, Rabinovitch Lab
+  dates: Jun 2023 – Aug 2025
+  location: Stanford, CA
+  summary: How loss-of-function TBX4 mutations cause pulmonary arterial hypertension, using transcriptomics, imaging informatics, and functional assays.
+  highlights:
+    - Built a Python application automating RNA-seq differential expression (DESeq2, sex-adjusted design) across all pairwise contrasts of a 6-condition co-culture system.
+    - Integrated transcription-factor activity (CollecTRI), pathway activity (PROGENy), hallmark over-representation, and ligand–receptor inference to isolate non-cell-autonomous effects.
+    - First high school student selected for the IGVF Consortium's Single-Cell Omics Jamboree; beta-tested a Broad Institute Terra AnVIL pipeline on single-cell epigenomic data.
+  more:
+    - Differentiated induced pluripotent stem cells; optimized wild-type and TBX4-knockout endothelial / smooth muscle co-cultures.
+    - Proliferation, adhesion, and migration assays; worked with X-ray data.
+  tags: [Python, R, DESeq2, RNA-seq, Single-cell, Terra]
+
+- org: Independent Research
+  role: Researcher
+  dates: Mar 2022 – Aug 2025
+  location: San Jose, CA
+  summary: NLP and computer vision for cancer prognosis. Work received a First Grand Award and Best of Category at Regeneron ISEF 2025.
+  highlights:
+    - Built an NLP framework that predicts cancer survival (C-index 0.72) and recurrence (C-index 0.77) from pathology reports of 9,523 TCGA patients across 32 cancer types. See the project page for details.
+    - Trained CNN and vision transformer models for tumor subtyping on gigapixel whole-slide images.
+    - Trained self-supervised models on CT scans.
+  tags: [PyTorch, NLP, Word2Vec, FastText, Vision transformers, Survival analysis]
+
+- org: Njoo Group
+  role: Chemical Biology Researcher
+  dates: Aug 2022 – Aug 2023
+  location: Fremont, CA
+  summary: Semi-synthesis of andrographolide analogs for triple-negative breast cancer and colorectal cancer.
+  highlights:
+    - Characterized and monitored reactions with TLC, column chromatography, LC-MS, NMR, and IR spectroscopy.
+    - Measured dose-dependent IC50 in HCT116 cells (MTT/MTS assays) and apoptosis (Caspase-Glo).
+  tags: [Organic synthesis, LC-MS, NMR, Cell assays]

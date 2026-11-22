@@ -1,0 +1,297 @@
+/*
+ * Shared styles for the data-driven Experience and Projects pages.
+ * Colors come from al_folio_core's theme variables, so light/dark mode just works.
+ * Every class here appears in generated HTML or in assets/js/portfolio.js, so PurgeCSS keeps it.
+ */
+
+.pf {
+  --pf-radius: 0.75rem;
+  --pf-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --pf-muted: var(--global-text-color-light);
+  --pf-accent: var(--global-theme-color);
+  --pf-line: var(--global-divider-color);
+}
+
+/* ---------- shared bits ---------- */
+
+.pf-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.pf-tags li {
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--pf-line);
+  color: var(--pf-muted);
+}
+
+.pf-list {
+  margin: 0.6rem 0 0;
+  padding-left: 1.1rem;
+}
+.pf-list li {
+  margin-bottom: 0.35rem;
+  line-height: 1.55;
+}
+
+.pf-more {
+  margin-top: 0.4rem;
+}
+.pf-more summary {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--pf-accent);
+  list-style: none;
+  user-select: none;
+}
+.pf-more summary::-webkit-details-marker {
+  display: none;
+}
+.pf-more summary::before {
+  content: "+";
+  display: inline-block;
+  width: 1ch;
+  font-weight: 600;
+  transition: transform 0.25s var(--pf-ease);
+}
+.pf-more[open] summary::before {
+  content: "−";
+}
+.pf-more[open] .pf-list {
+  animation: pf-fade-down 0.3s var(--pf-ease);
+}
+
+.pf-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  color: var(--global-hover-text-color, #fff);
+  background: var(--pf-accent);
+  vertical-align: middle;
+}
+
+/* ---------- experience timeline ---------- */
+
+.pf-timeline {
+  position: relative;
+  margin: 1.5rem 0 0;
+  padding: 0 0 0 1.75rem;
+  list-style: none;
+}
+.pf-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  left: 0.4rem;
+  width: 2px;
+  background: var(--pf-line);
+}
+.pf-entry {
+  position: relative;
+  padding-bottom: 2.25rem;
+}
+.pf-entry:last-child {
+  padding-bottom: 0;
+}
+.pf-entry::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.75rem + 0.4rem - 5px);
+  top: 0.45rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--global-bg-color);
+  border: 2px solid var(--pf-accent);
+  transition: background 0.25s var(--pf-ease);
+}
+.pf-entry.pf-current::before,
+.pf-entry:hover::before {
+  background: var(--pf-accent);
+}
+
+.pf-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  column-gap: 1rem;
+}
+.pf-title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.pf-dates {
+  font-size: 0.85rem;
+  color: var(--pf-muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.pf-org {
+  margin: 0.15rem 0 0;
+  color: var(--pf-accent);
+  font-size: 0.95rem;
+}
+.pf-org .pf-loc {
+  color: var(--pf-muted);
+}
+.pf-summary {
+  margin: 0.5rem 0 0;
+  color: var(--pf-muted);
+  font-style: italic;
+}
+
+/* ---------- projects ---------- */
+
+.pf-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+.pf-filter {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--pf-line);
+  background: transparent;
+  color: var(--global-text-color);
+  cursor: pointer;
+  transition:
+    background 0.2s var(--pf-ease),
+    color 0.2s var(--pf-ease),
+    border-color 0.2s var(--pf-ease);
+}
+.pf-filter:hover {
+  border-color: var(--pf-accent);
+  color: var(--pf-accent);
+}
+.pf-filter[aria-pressed="true"] {
+  background: var(--pf-accent);
+  border-color: var(--pf-accent);
+  color: var(--global-hover-text-color, #fff);
+}
+
+.pf-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+.pf-card {
+  padding: 1.4rem 1.5rem;
+  border-radius: var(--pf-radius);
+  border: 1px solid var(--pf-line);
+  background: var(--global-card-bg-color);
+  transition:
+    transform 0.3s var(--pf-ease),
+    box-shadow 0.3s var(--pf-ease),
+    border-color 0.3s var(--pf-ease);
+}
+.pf-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--pf-accent);
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.25);
+}
+.pf-card[hidden] {
+  display: none;
+}
+
+.pf-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 0.25rem;
+}
+.pf-metric {
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  border-left: 3px solid var(--pf-accent);
+  background: var(--global-code-bg-color);
+}
+.pf-metric-value {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--pf-accent);
+  font-variant-numeric: tabular-nums;
+}
+.pf-metric-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--pf-muted);
+}
+
+.pf-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+}
+.pf-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* ---------- motion ---------- */
+
+/* Elements start visible; JS adds .pf-js so content never stays hidden without it. */
+.pf-js .pf-reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.6s var(--pf-ease),
+    transform 0.6s var(--pf-ease);
+}
+.pf-js .pf-reveal.pf-in {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes pf-fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pf *,
+  .pf-js .pf-reveal {
+    transition: none !important;
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .pf-card {
+    padding: 1.1rem;
+  }
+  .pf-timeline {
+    padding-left: 1.4rem;
+  }
+  .pf-entry::before {
+    left: calc(-1.4rem + 0.4rem - 5px);
+  }
+}

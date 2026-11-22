@@ -37,6 +37,30 @@
       url: https://github.com/vrishankc/grace
       icon: fa-brands fa-github
 
+- title: Neonatal Foundation Model Data Pipeline
+  context: Stanford Biomedical Data Science · Aghaeepour Lab
+  dates: Jul 2026 – Aug 2026
+  categories: [ml, swe]
+  summary: An out-of-core pipeline that turns a 200+ GB OMOP electronic health record extract into a linked, pretraining-ready event store for a multimodal neonatal patient foundation model.
+  metrics:
+    - value: "2.1B"
+      label: flowsheet rows recovered
+    - value: "200+ GB"
+      label: EHR warehouse
+    - value: "100M+"
+      label: rows per table, out-of-core
+  highlights:
+    - "Two-stage DuckDB + Parquet design: an auditable per-table cleaning layer, then a fully regenerable modelling layer (patient and visit dimensions, one long partitioned event store, cohort tables). Every event carries a pointer back to its source row, so the union is reversible."
+    - Recovered 2.1 billion flowsheet rows (vitals, ventilator settings, deterioration scores) whose standard concept was unmapped, by parsing their structured source values. Also flagged formula-derived rows, which would otherwise leak information across time as model tokens.
+    - Schema-agnostic by construction. Every step introspects the real Parquet schema, degrades gracefully when a column is missing, and supports a dry-run mode that prints the generated SQL before scanning anything.
+    - Fixed an orphaned-key bug affecting 100,000+ rows and unified 7 divergent cohort definitions.
+  more:
+    - A version-controlled column-governance layer that records a keep/drop decision and rationale for every column, with unknown columns defaulting to manual review and small-cell suppression on every exported QC table.
+    - Rebuilt ICD-9 to ICD-10 diagnosis mapping on the CMS crosswalk with explicit handling of no-map, combination, and ambiguous codes, replacing an alphabetical first-pick that silently mislabelled rows.
+    - Deterministic mother–child linkage probe and a DICOM X-ray to patient linkage that joins on two independent identifier paths and reports conflicts, with identifiers resolved and discarded inside SQL.
+    - Reconciliation checks (source rows = output + removed duplicates), referential-integrity reports, and a handoff README documenting tables, filtering decisions, and linkage keys.
+  tags: [Python, SQL, DuckDB, Parquet, BigQuery, OMOP, Foundation models]
+
 - title: Pan-Cancer Prognosis from Clinical Narratives
   context: Independent research · Regeneron ISEF 2025 First Grand Award, Best of Category
   dates: 2022 – 2025
@@ -57,6 +81,27 @@
     - Kaplan–Meier analysis by risk quintile with log-rank tests, pan-cancer and within individual cancers.
     - OCR cleanup of scanned pathology reports.
   tags: [Python, NLP, Word2Vec, FastText, Survival analysis, TCGA]
+
+- title: Automated RNA-seq Analysis Application
+  context: Stanford Pediatric Cardiology · Rabinovitch Lab
+  dates: 2023 – 2025
+  categories: [ml, swe]
+  summary: A Python desktop application that lets wet-lab researchers run a full bulk RNA-seq differential expression and regulatory-inference analysis for any comparison in a TBX4 knockout endothelial / smooth-muscle co-culture study, without writing code.
+  metrics:
+    - value: "6 × 2"
+      label: culture conditions × cell types
+    - value: "5"
+      label: downstream inference analyses
+  highlights:
+    - "Point-and-click comparisons across monoculture and co-culture, wild-type and knockout, for either cell type, including pooled genotype comparisons that gather every culture in which that cell type carries a given genotype."
+    - "Chooses the DESeq2 design automatically from the comparison: sex + genotype for monocultures, sex + condition for co-cultures, and sex + condition + genotype for pooled genotype contrasts, so culture context is adjusted for rather than confounded."
+    - "End-to-end in one run: expression-based gene filtering with QC plots, PyDESeq2 differential expression, Ensembl-to-symbol annotation, volcano plots, and z-scored clustered heatmaps annotated by sex and condition, plus user-chosen gene panels."
+    - "Downstream inference on the DE statistics: transcription-factor activity (CollecTRI, univariate linear model), pathway activity (PROGENy, multivariate linear model), hallmark over-representation (MSigDB), and ligand–receptor enrichment (LIANA) to isolate non-cell-autonomous effects."
+  more:
+    - Started as a command-line script and grew into a GUI as more of the lab began using it; exports full and expression-filtered results tables with per-group means and standard deviations for follow-up experiments.
+    - A companion tool reruns the regulatory and cell–cell communication analyses directly from saved DESeq2 results. It drills into the top up- and down-regulated transcription factors with target-level volcano plots, plots each pathway's target genes, and adds secreted-signaling, cell-contact, ECM-receptor (CellChatDB), and cytokine (CytoSig) enrichment.
+    - Gene–gene co-expression screens (genome-wide Pearson correlation against a target gene) to follow up on candidate signaling pairs.
+  tags: [Python, PyDESeq2, decoupler, LIANA, Scanpy, Tkinter, RNA-seq]
 
 - title: URTC Conference Voting System
   context: IEEE MIT Undergraduate Research Technology Conference

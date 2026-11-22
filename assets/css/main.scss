@@ -1,0 +1,60 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* ---------------------------------------------------------------------------
+ * Local override (vrishank): warm, softer palette.
+ * Everything above is al_folio_core 1.0.11's main.scss, unchanged.
+ * Tweak the colors below; the rest of the theme reads these variables.
+ * ------------------------------------------------------------------------- */
+:root {
+  --global-bg-color: #faf6ef;
+  --global-card-bg-color: #fffcf7;
+  --global-newsletter-bg-color: #fffcf7;
+  --global-text-color: #2a2520;
+  --global-text-color-light: #857b70;
+  --global-divider-color: rgba(80, 50, 20, 0.12);
+  --global-footer-bg-color: #2a2520;
+  --global-footer-text-color: #d9d0c4;
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #1e1c1a;
+  --global-card-bg-color: #282522;
+  --global-text-color: #ebe4da;
+  --global-text-color-light: #9a9086;
+  --global-divider-color: #3e3934;
+  --global-footer-bg-color: #2a2622;
+  --global-footer-text-color: #b8aea2;
+  --global-footer-link-color: #ebe4da;
+}

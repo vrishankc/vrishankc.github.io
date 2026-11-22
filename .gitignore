@@ -20,3 +20,6 @@ vendor
 assets/img/photography/
 assets/video/photography/
 _data/photography.yml
+
+# Personal record (kept local only)
+vrishank_chandrasekhar_everything.txt

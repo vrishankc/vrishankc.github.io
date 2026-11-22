@@ -14,25 +14,24 @@
   context: MIT 6.3930 final project · team of two
   dates: Sep 2026 – Present
   categories: [ml]
-  summary: Multimodal early prediction of acute myocardial infarction, acute heart failure, and atrial fibrillation in the emergency department, using MIMIC-IV vitals, labs, ECGs, and radiology text.
+  summary: Multimodal early-warning models over 164K emergency visits that fuse tabular, ECG-derived, and free-text features, plus a benchmark of open LLMs (Gemma 3, MedGemma) as zero-shot and frozen-embedding classifiers against gradient-boosted baselines.
   metrics:
-    - value: "164K+"
-      label: ED stays
     - value: "0.93–0.96"
-      label: val. AUROC (AMI)
-    - value: "100%"
-      label: label agreement (AHF, AFib)
+      label: val. AUROC (fused model)
+    - value: "164K+"
+      label: training examples
+    - value: "3 × 2"
+      label: targets × prediction times
   highlights:
-    - Leakage-safe design with two prediction times (6 h / 24 h after arrival); every input is timestamped at or before the prediction time.
-    - Patient-level 70/15/15 splits from a salted SHA-256 hash of the patient ID, with hyperparameters tuned on an inner holdout and the test set scored once, after the models were frozen.
-    - XGBoost and TF-IDF + logistic regression baselines; the team's fused multimodal models reach 0.93–0.96 validation AUROC for AMI, with patient-clustered bootstrap CIs.
-    - "In progress: LLM evaluation comparing MedGemma and Gemma 3 — zero-shot Yes/No probability scoring with KV-cache reuse, frozen-embedding classifiers, paired AUROC tests, and knowledge-graph augmentation ablations."
+    - Fused modalities (vitals, labs, ECG measurements, radiology text) into a separate predictor for each of three outcomes at 6 h and 24 h horizons, benchmarked against XGBoost and TF-IDF + logistic regression baselines.
+    - "Leakage-safe by construction: every feature is timestamped at or before the prediction time, and splits come from a salted SHA-256 hash of the patient ID, so no patient appears in more than one split."
+    - Hyperparameters tuned on an inner holdout nested inside the training set; the test set is scored once, after the models are frozen. Uncertainty is reported with patient-clustered bootstrap CIs.
+    - "In progress: an LLM evaluation pipeline comparing Gemma 3 and MedGemma, with zero-shot Yes/No log-probability scoring (with KV-cache reuse across prompts), linear probes on frozen embeddings, paired AUROC significance tests, and knowledge-graph augmentation ablations."
   more:
-    - Cohort of 425,087 ED stays filtered to 164,629 stays (91,175 patients) at 6 h and 177,803 stays (96,628 patients) at 24 h.
-    - Labels from ICD-9/10 codes on the linked hospitalization (or ED codes when not admitted), acute presentations only; validated against MIMIC-IV-ECG-Ext-ICD.
-    - "Prevalence at 6 h: AMI 3.4%, AHF 7.1%, AFib 14.5%. Evaluated with AUROC, AUPRC, Brier score, and subgroup analysis."
-    - Chunked processing of multi-gigabyte tables, caching, and a shared training harness.
-  tags: [PyTorch, XGBoost, Hugging Face, MedGemma, MIMIC-IV, Multimodal]
+    - Evaluated with AUROC, AUPRC, Brier score (calibration), and subgroup analysis.
+    - Chunked, cached processing of multi-gigabyte tables behind a shared training harness used by every model.
+    - "Data: 425K MIMIC-IV emergency stays filtered to 164,629 (6 h) and 177,803 (24 h); labels from ICD-9/10 codes, validated against MIMIC-IV-ECG-Ext-ICD."
+  tags: [PyTorch, Hugging Face, Gemma 3, XGBoost, Multimodal, LLM evaluation]
   links:
     - label: Code
       url: https://github.com/vrishankc/grace

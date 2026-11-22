@@ -2,63 +2,60 @@
 layout: page
 title: school
 permalink: /school/
-description: Education, awards, coursework, and campus involvement.
 nav: true
 nav_order: 3
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}" />
 
-<div class="pf">
-  <h2 class="pf-section-title">education</h2>
-  <div class="pf-grid">
-    {% for s in site.data.school.schools %}
-    <article class="pf-card pf-reveal">
-      <div class="pf-head">
-        <h3 class="pf-title">{{ s.name }}</h3>
-        {% if s.dates %}<span class="pf-dates">{{ s.dates }}</span>{% endif %}
-      </div>
-      <p class="pf-org">
-        {{ s.degree }}{% if s.detail %} · {{ s.detail }}{% endif %} {% if s.location %}<span class="pf-loc"> · {{ s.location }}</span>{% endif %}
-      </p>
-      {% if forloop.first and site.data.school.coursework %}
-      <h4 class="pf-subhead">coursework</h4>
-      <ul class="pf-twocol">
+<div class="pf pf-school">
+  {% for s in site.data.school.schools %}
+  <div class="pf-school-head pf-reveal">
+    <h2 class="pf-school-name">{{ s.name }}</h2>
+    <span class="pf-school-degree">{{ s.degree }}</span>
+    {% if s.detail %}<span class="pf-school-detail">{{ s.detail }}</span>{% endif %}
+  </div>
+  {% endfor %}
+
+  <div class="pf-cols">
+    <section class="pf-col pf-reveal">
+      <h3 class="pf-col-title">coursework</h3>
+      <ul class="pf-plain">
         {% for c in site.data.school.coursework %}
         <li>
           {{ c.name }}
-          <span class="pf-code">· {{ c.code }}{% if c.at %} ({{ c.at }}){% endif %}</span>
+          <span class="pf-sub">· {{ c.code }}{% if c.at %} ({{ c.at }}){% endif %}</span>
         </li>
         {% endfor %}
       </ul>
-      {% endif %}
-    </article>
-    {% endfor %}
-  </div>
+    </section>
 
-  <h2 class="pf-section-title">awards &amp; honors</h2>
-  <ol class="pf-timeline">
-    {% for w in site.data.school.awards %}
-    <li class="pf-entry pf-reveal">
-      <div class="pf-head">
-        <h3 class="pf-title">{{ w.title }}</h3>
-        <span class="pf-dates">{{ w.date }}</span>
+    <section class="pf-col pf-reveal">
+      <h3 class="pf-col-title">activities</h3>
+      <ul class="pf-plain">
+        {% for a in site.data.school.activities %}
+        <li>{{ a.name }} {% if a.role %}<span class="pf-sub">· {{ a.role }}</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="pf-col pf-col-awards pf-reveal">
+      <h3 class="pf-col-title">awards and honors</h3>
+      <div class="pf-awards">
+        {% for w in site.data.school.awards %}
+        <details class="pf-award{% if w.featured %} pf-award-featured{% endif %}">
+          <summary>{{ w.title }}</summary>
+          <div class="pf-award-body">
+            <p class="pf-sub">{{ w.issuer }} · {{ w.date }}</p>
+            {% if w.description %}
+            <p>{{ w.description }}</p>
+            {% endif %}
+          </div>
+        </details>
+        {% endfor %}
       </div>
-      <p class="pf-org">{{ w.issuer }}</p>
-      {% if w.description %}
-      <p class="pf-summary">{{ w.description }}</p>
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ol>
-
-  <h2 class="pf-section-title">activities</h2>
-  <div class="pf-card pf-reveal">
-    <ul class="pf-twocol">
-      {% for a in site.data.school.activities %}
-      <li>{{ a.name }} {% if a.role %}<span class="pf-sub">· {{ a.role }}</span>{% endif %}</li>
-      {% endfor %}
-    </ul>
+      <p class="pf-hint">tap an award for details</p>
+    </section>
   </div>
 </div>
 

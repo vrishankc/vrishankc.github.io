@@ -1,16 +1,15 @@
 # Content for _pages/school.html.
 #
-# schools      - one card per institution: name, degree, detail, dates, location
+# schools      - one header per institution: name, degree, detail
 # coursework   - name, code, and optional `at` for courses taken outside MIT
 # activities   - name and optional role (shown muted after the name)
-# awards       - title, issuer, date, description (rendered as a timeline, newest first)
+# awards       - title, issuer, date, description; `featured: true` gives a stronger pill color.
+#                Each pill expands on click to show the issuer, date, and description.
 
 schools:
   - name: Massachusetts Institute of Technology
     degree: S.B. Computer Science
-    detail: Minors in Biology and Mathematics
-    dates: Sep 2025 – May 2028 (expected)
-    location: Cambridge, MA
+    detail: Minors in Biology and Mathematics · Class of 2028
 
 coursework:
   - name: Introduction to Machine Learning
@@ -25,12 +24,6 @@ coursework:
     code: "18.02"
   - name: Differential Equations
     code: "18.03"
-  - name: Linear Algebra
-    code: Math 4C
-    at: West Valley College
-  - name: Differential Equations
-    code: Math 4B
-    at: West Valley College
   - name: Classical Mechanics
     code: "8.01"
   - name: Genetics
@@ -81,14 +74,17 @@ awards:
   - title: Nobel Prize Ceremony Invitee & Nobel Week Delegate
     issuer: Nobel Prize Ceremonies
     date: Dec 2025
+    featured: true
     description: Panelist for "Minds of the Future" alongside Professor Omar Yaghi, 2025 Nobel Laureate in Chemistry. Attended the Nobel Prize lectures, banquet, and ceremony; met the 2025 laureates at the Nobel reception and the U.S. Embassy in Sweden. Interviewed by Japanese media.
   - title: MIT Huang-Hobbs Innovation Award
     issuer: MIT Biological Engineering
     date: Nov 2025
+    featured: true
     description: Top grand prize for my research at the 2025 MIT BioMakers "From Bench to Body" Symposium, judged by MIT Biological and Chemical Engineering faculty and Broad Institute core faculty.
   - title: Dudley R. Herschbach SIYSS Award
     issuer: Regeneron International Science and Engineering Fair
     date: May 2025
+    featured: true
     description: One of 12 best-in-fair top awards out of 1,657 finalists and 10 million entries worldwide at Regeneron ISEF 2025. Included an all-expenses-paid trip to present at the Stockholm International Youth Science Seminar during Nobel Week.
   - title: ISEF First Grand Award & Best of Category
     issuer: Regeneron International Science and Engineering Fair

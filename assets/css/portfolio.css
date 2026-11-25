@@ -404,11 +404,9 @@
   font-size: 0.75rem;
   color: var(--pf-muted);
 }
-/* Activity pop-ups: a small floating card under the activity name. */
+/* Activities: click a name to expand its description inline, like the award pills. */
 .pf-pop {
-  position: relative;
-  display: inline-block;
-  max-width: 100%;
+  display: block;
 }
 .pf-pop summary {
   cursor: pointer;
@@ -429,19 +427,13 @@
   text-decoration-color: var(--pf-accent);
 }
 .pf-pop-body {
-  position: absolute;
-  left: 0;
-  top: calc(100% + 0.4rem);
-  z-index: 30;
-  width: min(20rem, calc(100vw - 2rem));
-  padding: 0.75rem 0.9rem;
-  border-radius: 0.6rem;
-  border: 1px solid var(--pf-line);
-  background: var(--global-card-bg-color);
-  box-shadow: 0 12px 30px -12px rgba(0, 0, 0, 0.3);
+  margin-top: 0.45rem;
+  padding: 0.6rem 0.85rem;
+  border-radius: var(--pf-radius);
+  background: color-mix(in srgb, var(--pf-accent) 9%, transparent);
   font-size: 0.85rem;
   line-height: 1.5;
-  animation: pf-fade-down 0.2s var(--pf-ease);
+  animation: pf-fade-down 0.3s var(--pf-ease);
 }
 .pf-pop-body p {
   margin: 0 0 0.4rem;

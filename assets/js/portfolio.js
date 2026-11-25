@@ -42,28 +42,4 @@
       });
     });
   });
-
-  // Activity pop-ups: keep one open at a time; close on outside click or Escape.
-  var pops = root.querySelectorAll(".pf-pop");
-  if (pops.length) {
-    pops.forEach(function (p) {
-      p.addEventListener("toggle", function () {
-        if (!p.open) return;
-        pops.forEach(function (o) {
-          if (o !== p) o.open = false;
-        });
-      });
-    });
-    document.addEventListener("click", function (e) {
-      pops.forEach(function (p) {
-        if (p.open && !p.contains(e.target)) p.open = false;
-      });
-    });
-    document.addEventListener("keydown", function (e) {
-      if (e.key !== "Escape") return;
-      pops.forEach(function (p) {
-        p.open = false;
-      });
-    });
-  }
 })();

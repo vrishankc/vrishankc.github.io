@@ -50,38 +50,38 @@ coursework:
 activities:
   - name: SERC Scholar
     role: Schwarzman College of Computing
-    description: '2026–27 cohort of the Social and Ethical Responsibilities of Computing scholars program. My group studies the question "How does programming change scientific cultures?"'
+    description: '2026–27 cohort of the Social and Ethical Responsibilities of Computing Scholars program. Studying how programming changes scientific cultures with Dr. Alicja Ostrowska.
     url: https://computing.mit.edu/cross-cutting/social-and-ethical-responsibilities-of-computing/
   - name: College of Computing Undergraduate Advisory Group
-    role: Chair
-    description: Chair of the student group that advises the Schwarzman College of Computing on undergraduate academics and student life.
-    url: https://computing.mit.edu
+    role: Co-Chair
+    description: Co-chair of the student group that advises the Schwarzman College of Computing faculty and course administrators on undergraduate academics, student life, and AI policy in classrooms.
+    url: https://computing.mit.edu/about/people/undergraduate-advisory-group/
   - name: Student Advisory Group in Engineering
-    description: Undergraduate advisory group that gives student input to the MIT School of Engineering.
-    url: https://engineering.mit.edu
+    description: Provide student input to and design school-wide initiatives with Dean Paula Hammond for the development and improvement of programs and outreach at MIT's School of Engineering.
+    url: https://engineering.mit.edu/undergraduate/student-advisory-group
   - name: Undergraduate Research Technology Conference
     role: Executive & Webmaster
-    description: Executive board member of IEEE MIT URTC. I maintain urtc.mit.edu and built the conference's login-free voting system.
+    description: Executive board member of IEEE MIT URTC. I maintain urtc.mit.edu, have built the conference's login-free voting system, and help run day-of logistics for the conference serving over 800 attendees annually.
     url: https://urtc.mit.edu
   - name: Machine Learning for Health (ML4H)
     role: Reviewer
-    description: Peer reviewer for the Machine Learning for Health symposium.
-    url: https://ahli.cc/ml4h/
+    description: Designated a junior peer reviewer for the Machine Learning for Health symposium.
+    url: https://ml4h.ahli.cc/
   - name: Global Teaching Labs
     role: Italy
-    description: MISTI program in which MIT students teach STEM workshops in high schools abroad. I taught in Italy.
-    url: https://misti.mit.edu/global-teaching-labs
+    description: MISTI program in which MIT students teach STEM workshops in high schools abroad. I am teaching during IAP 2027 (January) to students at the Liceo Scientifico Belfiore in Mantova, Italy.
+    url: https://misti.mit.edu/italy
   - name: NEET Living Machines
     role: Industry Liaison
-    description: Industry liaison for the Living Machines thread of MIT's New Engineering Education Transformation program. I organized a speaker event in November 2026.
-    url: https://neet.mit.edu
+    description: Industry liaison for the Living Machines thread of MIT's New Engineering Education Transformation program. I organized a speaker event in November 2026 and am releasing monthly Industry Office Hours.
+    url: https://neet.mit.edu/threads/lm
   - name: MIT Biotech Group
     role: Consulting Associate
-    description: Consulting associate in MIT's student organization connecting students with the biotech industry.
+    description: Consulting for Reflector Bio, a biotech startup in Boston/Cambridge.
     url: https://biotech.mit.edu
   - name: BioMakers
     role: Associate
-    description: Associate in MIT BioMakers, the student biological engineering community that hosts the "From Bench to Body" symposium.
+    description: Engagement Associate and External Associate as part of MIT BioMakers.
     url: https://biomakers.mit.edu
   - name: Associate Advisor
     description: Upperclass associate advisor who helps first-year students with course planning and the transition to MIT.
@@ -92,7 +92,7 @@ activities:
     description: "MIT's South Asian a cappella group. Served as president until October 2026: rehearsal planning, budget, gig logistics, and album recording."
     url: https://ohms.mit.edu
   - name: Boston Bandish
-    description: Intercollegiate South Asian a cappella competition hosted at MIT, where top college groups compete for a spot at the national championship, All-American Awaaz.
+    description: Volunteer for intercollegiate South Asian a cappella competition hosted at MIT, where top college groups compete for a spot at the national championship, All-American Awaaz.
     url: https://bandish.mit.edu/
 
 awards:

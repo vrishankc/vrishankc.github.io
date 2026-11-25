@@ -34,9 +34,29 @@ nav_order: 3
       <h3 class="pf-col-title">activities and societies</h3>
       <ul class="pf-plain">
         {% for a in site.data.school.activities %}
-        <li>{{ a.name }} {% if a.role %}<span class="pf-sub">· {{ a.role }}</span>{% endif %}</li>
+        <li>
+          {% if a.description or a.url %}
+          <details class="pf-pop">
+            <summary>
+              <span class="pf-pop-name">{{ a.name }}</span>
+              {% if a.role %}<span class="pf-sub">· {{ a.role }}</span>{% endif %}
+            </summary>
+            <div class="pf-pop-body" role="note">
+              {% if a.description %}
+              <p>{{ a.description }}</p>
+              {% endif %} {% if a.url %}
+              <a href="{{ a.url }}" target="_blank" rel="noopener noreferrer">
+                {{ a.url | remove: 'https://' | remove: 'http://' | remove: 'www.' | split: '/' | first }}
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              </a>
+              {% endif %}
+            </div>
+          </details>
+          {% else %} {{ a.name }} {% if a.role %}<span class="pf-sub">· {{ a.role }}</span>{% endif %} {% endif %}
+        </li>
         {% endfor %}
       </ul>
+      <p class="pf-hint">tap an activity for details</p>
     </section>
 
     <section class="pf-col pf-col-awards pf-reveal">

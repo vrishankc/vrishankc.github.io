@@ -2,7 +2,8 @@
 #
 # schools      - one header per institution: name, degree, detail
 # coursework   - name, code, and optional `at` for courses taken outside MIT
-# activities   - name and optional role (shown muted after the name)
+# activities   - name, optional role (shown muted after the name), and optional description/url.
+#                An activity with a description or url opens a small pop-up when clicked.
 # awards       - title, issuer, date, description; `featured: true` gives a stronger pill color.
 #                Each pill expands on click to show the issuer, date, and description.
 
@@ -49,26 +50,50 @@ coursework:
 activities:
   - name: SERC Scholar
     role: Schwarzman College of Computing
+    description: '2026–27 cohort of the Social and Ethical Responsibilities of Computing scholars program. My group studies the question "How does programming change scientific cultures?"'
+    url: https://computing.mit.edu/cross-cutting/social-and-ethical-responsibilities-of-computing/
   - name: College of Computing Undergraduate Advisory Group
     role: Chair
+    description: Chair of the student group that advises the Schwarzman College of Computing on undergraduate academics and student life.
+    url: https://computing.mit.edu
   - name: Student Advisory Group in Engineering
+    description: Undergraduate advisory group that gives student input to the MIT School of Engineering.
+    url: https://engineering.mit.edu
   - name: Undergraduate Research Technology Conference
     role: Executive & Webmaster
+    description: Executive board member of IEEE MIT URTC. I maintain urtc.mit.edu and built the conference's login-free voting system.
+    url: https://urtc.mit.edu
   - name: Machine Learning for Health (ML4H)
     role: Reviewer
+    description: Peer reviewer for the Machine Learning for Health symposium.
+    url: https://ahli.cc/ml4h/
   - name: Global Teaching Labs
     role: Italy
+    description: MISTI program in which MIT students teach STEM workshops in high schools abroad. I taught in Italy.
+    url: https://misti.mit.edu/global-teaching-labs
   - name: NEET Living Machines
     role: Industry Liaison
+    description: Industry liaison for the Living Machines thread of MIT's New Engineering Education Transformation program. I organized a speaker event in November 2026.
+    url: https://neet.mit.edu
   - name: MIT Biotech Group
     role: Consulting Associate
+    description: Consulting associate in MIT's student organization connecting students with the biotech industry.
+    url: https://biotech.mit.edu
   - name: BioMakers
     role: Associate
+    description: Associate in MIT BioMakers, the student biological engineering community that hosts the "From Bench to Body" symposium.
+    url: https://biomakers.mit.edu
   - name: Associate Advisor
+    description: Upperclass associate advisor who helps first-year students with course planning and the transition to MIT.
   - name: Chemistry & Biology Tutor
+    description: Tutor for 5.111 Principles of Chemical Science (through the MIT Chemistry Education Office), 5.12 Organic Chemistry I, and 7.03 Genetics.
   - name: MIT Ohms
     role: A Cappella
+    description: "MIT's South Asian a cappella group. Served as president until October 2026: rehearsal planning, budget, gig logistics, and album recording."
+    url: https://ohms.mit.edu
   - name: Boston Bandish
+    description: Intercollegiate South Asian a cappella competition hosted at MIT, where top college groups compete for a spot at the national championship, All-American Awaaz.
+    url: https://bandish.mit.edu/
 
 awards:
   - title: Nobel Prize Ceremony Invitee & Nobel Week Delegate

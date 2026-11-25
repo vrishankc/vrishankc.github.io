@@ -404,6 +404,61 @@
   font-size: 0.75rem;
   color: var(--pf-muted);
 }
+/* Activity pop-ups: a small floating card under the activity name. */
+.pf-pop {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.pf-pop summary {
+  cursor: pointer;
+  list-style: none;
+}
+.pf-pop summary::-webkit-details-marker {
+  display: none;
+}
+.pf-pop-name {
+  text-decoration: underline dotted;
+  text-decoration-color: var(--pf-muted);
+  text-underline-offset: 0.2em;
+  transition: color 0.2s var(--pf-ease);
+}
+.pf-pop summary:hover .pf-pop-name,
+.pf-pop[open] .pf-pop-name {
+  color: var(--pf-accent);
+  text-decoration-color: var(--pf-accent);
+}
+.pf-pop-body {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.4rem);
+  z-index: 30;
+  width: min(20rem, calc(100vw - 2rem));
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--pf-line);
+  background: var(--global-card-bg-color);
+  box-shadow: 0 12px 30px -12px rgba(0, 0, 0, 0.3);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  animation: pf-fade-down 0.2s var(--pf-ease);
+}
+.pf-pop-body p {
+  margin: 0 0 0.4rem;
+}
+.pf-pop-body p:last-child {
+  margin-bottom: 0;
+}
+.pf-pop-body a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+}
+.pf-pop-body a i {
+  font-size: 0.7em;
+}
+
 /* On phones, show awards first. */
 @media (max-width: 767.98px) {
   .pf-col-awards {
